@@ -321,7 +321,9 @@ header > a {
     margin-bottom: 20px;
 }
 
-.resume-header h1, .resume-header h2, .resume-header h3 {
+.resume-header h1, 
+.resume-header h2, 
+.resume-header h3 {
     color: #fff; /* White text color */
 }
 
@@ -351,17 +353,25 @@ header > a {
     margin: 10px 0;
 }
 
-.resume-content ul {
-    margin-left: 20px;
+.resume-content .skills-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.resume-content .skills-table th,
+.resume-content .skills-table td {
+    padding: 8px;
+    border: 1px solid #fff;
+    text-align: left;
     color: #fff; /* White text color */
 }
 
-.resume-content ul li {
-    list-style-type: disc; /* Bullet points */
+.resume-content .skills-table th {
+    background-color: #4CAF50; /* Green background color */
 }
 
-.resume-content h3 {
-    color: #fff; /* White text color */
+.resume-content .skills-table tr:nth-child(even) {
+    background-color: #A9A9A9; /* Dark gray background color */
 }
 
 /* Gallery Section */
