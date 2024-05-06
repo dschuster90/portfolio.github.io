@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--REQUIRED: head semantic element, 4-12-24 -->
+<head>
+    <meta charset="UTF-8">
+    <!--REQUIRED: viewport metadata, 4-12-24 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--REQUIRED: description metadata, 4-13-24 -->
+    <meta name="description" content="This page is about learning about Dave Schuster.">
+    <!--REQUIRED: keywords metadata, 4-13-24 -->
+    <meta name="keywords" content="developer, portfolio, skills, experience, web development, programming">
+    <!-- REQUIRED: author metadata, 4-13-2024 -->
+    <meta name="author" content="Dave Schuster">
+    <!-- REQUIRED: title mtadata, 4-13-24 -->
+    <meta name="title" content="Dave Schuster - Developer Portfolio">
+    <title>Daves Portfolio | About</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="image/logo.ico">
+</head>
+<!--REQUIRED: body semantic element, 4-12-24 -->
+<body>
+    <!--REQUIRED: header semantic element, 4-12-24 -->
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <!--REQUIRED: image 1 of 5, 4-12-24 -->
+                <img src="image/logo.png" alt="Linux OS mascot constructed from computer parts.">  
+            </a>
+        </div>
+        <!--REQUIRED: nav semantic element, 4-12-24 -->
+        <nav>
+            <!--REQUIRED: ul, ol, OR dl list element, 4-12-24 -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_me.html">About Me</a>
+                    <ul class="dropdown">
+                        <li><a href="introduction.html">Introduction</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact_me.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--REQUIRED: main semantic element, 4-12-24 -->
+    <main class="inspiration">
+        <div id="aboutMe">
+            <h2>A Little About Dave</h2>
+            <p>
+                I developed a passion for technology early on, largely influenced by my uncle's love for computer networking. 
+                He often had home projects, and I eagerly assisted him. Later, I stumbled upon a video on YouTube featuring Harvard's CS50 class. 
+                Intrigued, I delved into it and found myself captivated by the world of programming. And now, here I am, deeply engrossed in the field.
+            </p>
+            <!--REQUIRED: figure/figcaption, 5-5-24 -->
+            <figure>
+                <figcaption>Harvard's CS50: Introduction to Computer Science</figcaption>
+                <!--REQUIRED: video OR audio, 5-5-24 -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/LfaMVlDaQ24" allowfullscreen></iframe>
+            </figure>
+        </div>
+    </main>
+    <!--REQUIRED: footer semantic element, 4-12-24 -->
+    <footer>
+        <!--REQUIRED: special character, 4-22-24 -->
+        <p>&copy; 2024 Dave Schuster | Email: <a href="mailto:tuxlord90@gmail.com">tuxlord90@gmail.com</a></p>
+    </footer>
+</body>
+</html>

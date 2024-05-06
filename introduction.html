@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--REQUIRED: head semantic element, 4-12-24 -->
+<head>
+    <meta charset="UTF-8">
+    <!--REQUIRED: viewport metadata, 4-12-24 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--REQUIRED: description metadata, 4-13-24 -->
+    <meta name="description" content="Welcome to my introduction page. Learn more about me, my background, and my interests.">
+    <!--REQUIRED: keywords metadata, 4-13-24 -->
+    <meta name="keywords" content="developer, portfolio, skills, experience, web development, programming">
+    <!-- REQUIRED: author metadata, 4-13-2024 -->
+    <meta name="author" content="Dave Schuster">
+    <!-- REQUIRED: title mtadata, 4-13-24 -->
+    <meta name="title" content="Dave Schuster - Developer Portfolio">
+    <title>Daves Portfolio | Intro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="image/logo.ico">
+</head>
+<!--REQUIRED: body semantic element, 4-12-24 -->
+<body>
+    <!--REQUIRED: header semantic element, 4-12-24 -->
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <!--REQUIRED: image 1 of 5, 4-12-24 -->
+                <img src="image/logo.png" alt="Linux OS mascot constructed from computer parts.">  
+            </a>
+        </div>
+        <!--REQUIRED: nav semantic element, 4-12-24 -->
+        <nav>
+            <!--REQUIRED: ul, ol, OR dl list element, 4-12-24 -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_me.html">About Me</a>
+                    <ul class="dropdown">
+                        <li><a href="introduction.html">Introduction</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact_me.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--REQUIRED: main semantic element, 4-12-24 -->
+    <main class="inspiration">
+        <div class="intro">
+            <h2>Why Me?</h2>
+            <p>
+                As a dedicated and skilled developer with strong backend skills, I am passionate about crafting robust and efficient solutions to complex problems. 
+                With extensive experience supporting server-side code for complex systems, I have honed my ability to architect scalable and reliable backend architectures. 
+                This includes optimizing database queries, implementing efficient algorithms, and ensuring seamless integration with frontend components. 
+                With a keen eye for detail and a commitment to excellence, I strive to deliver high-quality software that meets the needs and exceeds the expectations of my clients and users.
+            </p>
+        </div>
+    </main>    
+    <!--REQUIRED: footer semantic element, 4-12-24 -->
+    <footer>
+        <!--REQUIRED: special character, 4-22-24 -->
+        <p>&copy; 2024 Dave Schuster | Email: <a href="mailto:tuxlord90@gmail.com">tuxlord90@gmail.com</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--REQUIRED: head semantic element, 4-12-24 -->
+<head>
+    <meta charset="UTF-8">
+    <!--REQUIRED: viewport metadata, 4-12-24 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--REQUIRED: description metadata, 4-13-24 -->
+    <meta name="description" content="This page showcases my resume and professional experience.">
+    <!--REQUIRED: keywords metadata, 4-13-24 -->
+    <meta name="keywords" content="developer, portfolio, skills, experience, web development, programming">
+    <!-- REQUIRED: author metadata, 4-13-2024 -->
+    <meta name="author" content="Dave Schuster">
+    <!-- REQUIRED: title mtadata, 4-13-24 -->
+    <meta name="title" content="Dave Schuster - Developer Portfolio">
+    <title>Daves Portfolio | Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="image/logo.ico">
+</head>
+<!--REQUIRED: body semantic element, 4-12-24 -->
+<body>
+    <!--REQUIRED: header semantic element, 4-12-24 -->
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <!--REQUIRED: image 1 of 5, 4-12-24 -->
+                <img src="image/logo.png" alt="Linux OS mascot constructed from computer parts.">  
+            </a>
+        </div>
+        <!--REQUIRED: nav semantic element, 4-12-24 -->
+        <nav>
+            <!--REQUIRED: ul, ol, OR dl list element, 4-12-24 -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_me.html">About Me</a>
+                    <ul class="dropdown">
+                        <li><a href="introduction.html">Introduction</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact_me.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--REQUIRED: main semantic element, 4-12-24 -->
+    <main class="inspiration">
+        <div class="resume">
+            <header class="resume-header">
+                <h1>Dave Schuster</h1>
+                <p>Email: tuxlord90@gmail.com | Phone: (123) 456-7890 | Location: Buckeye, Arizona</p>
+            </header>
+        
+            <hr>
+        
+            <div class="resume-content">
+                <h2 class="resume-content-header">Objective</h2>
+                <p class="resume-content-text">Passionate and skilled developer seeking a challenging position in web development.</p>
+            </div>
+        
+            <div class="resume-content">
+                <h2 class="resume-content-header">Education</h2>
+                <h3>Bachelor of Science in Computer Science</h3>
+                <p class="resume-content-text">University of Future, Smallville, Tennessee</p>
+                <p class="resume-content-text">Graduation Date: May, 2043</p>
+            </div>
+        
+            <div class="resume-content">
+                <h2 class="resume-content-header">Skills</h2>
+                <!--REQUIRED: ul, ol, OR dl list element, 5-5-24 -->
+                <ul class="resume-content-text">
+                    <li>HTML5, CSS3, JavaScript</li>
+                    <li>Responsive Web Design</li>
+                    <li>Frontend Frameworks: Bootstrap, React</li>
+                    <li>Backend Technologies: Node.js, Express</li>
+                    <li>Database Management: MongoDB, MySQL</li>
+                    <li>Version Control: Git, GitHub</li>
+                </ul>
+            </div>
+        
+            <div class="resume-content">
+                <h2 class="resume-content-header">Experience</h2>
+                <h3>Web Developer Master</h3>
+                <p class="resume-content-text">Future Company, Metropolis, Metralia</p>
+                <p class="resume-content-text">May, 2000 - May, 2020</p>
+                <ul class="resume-content-text">
+                    <li>Assisted in the development of responsive web applications using HTML, CSS, and JavaScript.</li>
+                    <li>Worked with the team to implement new features and fix bugs in existing projects.</li>
+                    <li>Collaborated with designers to ensure consistent UI/UX across all platforms.</li>
+                </ul>
+            </div>
+        
+            <div class="resume-content">
+                <h2 class="resume-content-header">Projects</h2>
+                <h3>Portfolio Website</h3>
+                <p class="resume-content-text">Developed a personal portfolio website showcasing skills and projects.</p>
+                <h3>E-commerce Website</h3>
+                <p class="resume-content-text">Built an e-commerce website using React and Node.js for backend.</p>
+            </div>
+        
+            <div class="resume-content">
+                <h2 class="resume-content-header">Certifications</h2>
+                <p class="resume-content-text">Certified Web Developer - Future Certification Institute</p>
+                <p class="resume-content-text">April, 2073</p>
+            </div>
+        </div>
+    </main>
+    <!--REQUIRED: footer semantic element, 4-12-24 -->
+    <footer>
+        <!--REQUIRED: special character, 4-22-24 -->
+        <p>&copy; 2024 Dave Schuster | Email: <a href="mailto:tuxlord90@gmail.com">tuxlord90@gmail.com</a></p>
+    </footer>
+</body>
+</html>

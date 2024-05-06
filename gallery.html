@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--REQUIRED: head semantic element, 4-12-24 -->
+<head>
+    <meta charset="UTF-8">
+    <!--REQUIRED: viewport metadata, 4-12-24 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--REQUIRED: description metadata, 4-13-24 -->
+    <meta name="description" content="Explore my gallery page to see my projects, designs, and artworks.">
+    <!--REQUIRED: keywords metadata, 4-13-24 -->
+    <meta name="keywords" content="developer, portfolio, skills, experience, web development, programming">
+    <!-- REQUIRED: author metadata, 4-13-2024 -->
+    <meta name="author" content="Dave Schuster">
+    <!-- REQUIRED: title mtadata, 4-13-24 -->
+    <meta name="title" content="Dave Schuster - Developer Portfolio">
+    <title>Daves Portfolio | Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="image/logo.ico">
+</head>
+<!--REQUIRED: body semantic element, 4-12-24 -->
+<body>
+    <!--REQUIRED: header semantic element, 4-12-24 -->
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <!--REQUIRED: image 1 of 5, 4-12-24 -->
+                <img src="image/logo.png" alt="Linux OS mascot constructed from computer parts.">  
+            </a>
+        </div>
+        <!--REQUIRED: nav semantic element, 4-12-24 -->
+        <nav>
+            <!--REQUIRED: ul, ol, OR dl list element, 4-12-24 -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_me.html">About Me</a>
+                    <ul class="dropdown">
+                        <li><a href="introduction.html">Introduction</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact_me.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--REQUIRED: main semantic element, 4-12-24 -->
+    <main class="inspiration">
+        <div class="gallery-container">
+            <h1>My Projects</h1>
+            <div class="gallery-item">
+                <!--REQUIRED: image 3 of 5, 5-5-24 -->
+                <img src="image/project1.jpg" alt="Homepage of a clothing e-commerce website specializing in spring attire">
+                <p>
+                   Developing this website was challenging due to the complexity of integrating various features like user authentication, product filtering, 
+                   and payment processing, but overcoming these hurdles was rewarding and helped me grow as a developer.
+                </p>
+            </div>
+            <div class="gallery-item">
+                <!--REQUIRED: image 4 of 5, 5-5-24 -->
+                <img src="image/project2.jpg" alt="Ecommerce homepage showcasing a variety of decorations and tablets for sale.">
+                <p>
+                   Creating this website was an enjoyable experience as it allowed me to explore various design elements and implement them creatively. 
+                   From selecting color schemes to refining layouts, every step was a delight to work on.
+                </p>
+            </div>
+            <div class="gallery-item">
+                <!--REQUIRED: image 5 of 5, 5-5-24 -->
+                <img src="image/project3.jpg" alt="Fashionable clothing items displayed on an e-commerce website">
+                <p>
+                   Designing this clothing e-commerce website was both enjoyable and rewarding. 
+                   Crafting the user interface and implementing the functionality allowed for a fun and engaging development experience.
+                </p>
+            </div>
+        </div>
+    </main>
+    <!--REQUIRED: footer semantic element, 4-12-24 -->
+    <footer>
+        <!--REQUIRED: special character, 4-22-24 -->
+        <p>&copy; 2024 Dave Schuster | Email: <a href="mailto:tuxlord90@gmail.com">tuxlord90@gmail.com</a></p>
+    </footer>
+</body>
+</html>

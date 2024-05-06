@@ -1,0 +1,473 @@
+/* Table of Contents */
+
+/* Reset default margin and padding */
+/* Global styles */
+/* Heading 1 styles */
+/* Paragraph styles */
+/* Link styles */
+/* Navigation styles */
+/* Navigation link styles */
+/* Navigation link hover, focus, and active styles */
+/* Footer styles */
+
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    height: 100vh;
+    background-color: #2C3E50;
+    color: #c7c7c7;
+}
+
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #c7c7c7;
+}
+
+p, cite {
+    color: #c7c7c7;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.inspiration {
+    display: flex;
+    /* REQUIRED: image 2 of 5, 4-12-24 */
+    background-image: url('image/code.jpg'), linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, .25), rgba(44, 62, 80, 0.5));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: #398e14 1px solid;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #2C3E50;
+}
+
+nav a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF; /* Same color as navigation links */
+}
+
+/* Style the main navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul > li {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px; /* Add spacing between menu items */
+}
+
+nav ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+nav ul > li > ul.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 10px 0;
+    /*REQUIRED: border, 5-01-24*/
+    border: 1px solid #ccc;
+}
+
+/* Show dropdown on hover */
+nav ul > li:hover > ul.dropdown {
+    display: block;
+}
+
+/* Style dropdown menu items */
+nav ul > li > ul.dropdown li {
+    display: block;
+}
+
+/* Style dropdown menu item links */
+nav ul > li > ul.dropdown li > a {
+    display: block;
+    padding: 8px 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Change link color on hover */
+nav ul > li > ul.dropdown li > a:hover {
+    background-color: #f0f0f0;
+    color: #398e14;
+}
+
+/*REQUIRED: dynamic styling of navigation, 4-12-24*/
+nav a:hover,
+nav a:focus,
+nav .active,
+footer a:hover,
+footer a:focus,
+footer .active {
+    color: #398e14;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; /* Add border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for the card effect */
+    padding: 20px; /* Add padding for content spacing */
+    background-color: #FFFFFF;
+    clear: both;
+}
+
+footer {
+    background-color: #34495E;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    color: #FFFFFF;
+}
+
+#logo img {
+    width: auto;
+    height: 40px; /* Maintain aspect ratio */    
+    padding-left: 5px;
+}
+
+header {
+    position: relative;
+}
+
+header > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Form Layout */
+#contactMe {
+    max-height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+    grid-template-rows: auto auto auto auto; /* 4 rows */
+    gap: 10px; /* Gap between grid items */
+    background-color: #2C3E50; /* Updated to match navigation color */
+    padding: 20px; /* Padding for spacing */
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+#contactMe h1 {
+    grid-column: 1 / span 2; /* Span both columns */
+    grid-row: 1; /* Row 1 */
+    text-align: center;
+    border: solid 1px #FFFFFF; /* Updated border color */
+    border-radius: 10px;
+    color: #FFFFFF; /* Updated text color */
+    background-color: #2C3E50; /* Updated background color */
+    padding: 10px; /* Added padding */
+}
+
+#contactMe .form-items {
+    border: solid 1px #FFFFFF; /* White border */
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #2C3E50; /* Updated background color */
+    color: #FFFFFF; /* Updated text color */
+}
+
+#contactMe .fieldset-container {
+    border: solid 1px #FFFFFF; /* White border */
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #2C3E50; /* Updated background color */
+    color: #FFFFFF; /* Updated text color */
+}
+
+#contactMe label {
+    display: block;
+    margin-bottom: 5px;
+    color: #FFFFFF; /* Updated text color */
+}
+
+#contactMe textarea,
+#contactMe input[type="text"],
+#contactMe input[type="email"],
+#contactMe select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-sizing: border-box; /* Adjust for padding */
+}
+
+#contactMe input[type="submit"],
+#contactMe input[type="reset"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #398e14;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#contactMe input[type="submit"]:hover,
+#contactMe input[type="reset"]:hover {
+    background-color: #5dbb2b;
+}
+
+/* About Me Section */
+#aboutMe {
+    max-height: 100%;
+    background-color: #2C3E50; /* Light gray background */
+    padding: 20px; /* Add some padding */
+    border-radius: 10px; /* Rounded corners */
+    overflow-y: auto;
+}
+
+#aboutMe h2 {
+    color: #fff; /* Dark gray text color */
+    text-align: center; /* Center align heading */
+}
+
+#aboutMe p {
+    color: #fff; /* Slightly darker gray text color */
+    line-height: 1.6; /* Increased line height for readability */
+}
+
+/* Style the figure/figcaption */
+#aboutMe figure {
+    margin-top: 20px; /* Add some space above the video */
+}
+
+#aboutMe figcaption {
+    text-align: center; /* Center align the caption */
+    font-style: italic; /* Italicize the caption text */
+    color: #fff; /* Light gray color for the caption */
+    margin-top: 10px; /* Add some space above the caption */
+}
+
+/* Style the iframe to make it responsive */
+#aboutMe iframe {
+    max-width: 100%; /* Set maximum width to 100% */
+    height: auto; /* Allow height to adjust proportionally */
+    display: block; /* Ensure it behaves as a block element */
+    margin: 0 auto; /* Center align the iframe */
+}
+
+/* Intro Section */
+.intro {
+    max-height: 100%;
+    background-color: #2C3E50;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.intro h2 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Resume Section */
+.resume {
+    max-height: 100%;
+    background-color: #2C3E50; /* Light gray background */
+    padding: 20px; /* Add some padding */
+    border-radius: 10px; /* Rounded corners */
+    overflow-y: auto;
+}
+
+.resume-header {
+    margin-bottom: 20px;
+}
+
+.resume-header h1, .resume-header h2, .resume-header h3 {
+    color: #fff; /* White text color */
+}
+
+.resume-header h1 {
+    font-size: 24px;
+}
+
+.resume-header h2 {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.resume-header h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.resume-content {
+    margin-bottom: 20px;
+}
+
+.resume-content-header {
+    margin-bottom: 10px;
+}
+
+.resume-content p {
+    margin: 10px 0;
+}
+
+.resume-content ul {
+    margin-left: 20px;
+    color: #fff; /* White text color */
+}
+
+.resume-content ul li {
+    list-style-type: disc; /* Bullet points */
+}
+
+.resume-content h3 {
+    color: #fff; /* White text color */
+}
+
+/* Gallery Section */
+.gallery-container {
+    max-height: 100%;
+    background-color: #2C3E50;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.gallery-container h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gallery-item {
+    margin-bottom: 30px;
+    border-bottom: #c7c7c7 solid;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.gallery-item p {
+    color: #fff;
+    margin-top: 10px;
+}
+
+
+/* Media Queries */
+
+/* For large devices */
+/*REQUIRED: media query 1 of 3, 5-4-24*/
+@media screen and (min-width: 1024px) {
+    #logo, nav {
+        /*REQUIRED: CSS float, 5-4-24*/
+        float: left;
+        margin-right: 20px; /* Add space between logo and nav */
+    }
+
+    #logo {
+        display: block; /* Show the logo */
+    }
+
+    nav {
+        display: block; /* Show the navigation */
+    }
+
+    main {
+        flex-direction: row; /* Display sections in a row */
+        height: 80%; /* Reset height */
+    }
+
+    main > section {
+        flex: 1; /* Each section takes equal space */
+        margin: 0 20px; /* Adjust margin between sections */
+        border: 1px solid #ccc; /* Add border */
+        border-radius: 10px; /* Add border radius */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+        padding: 20px; /* Add padding for content spacing */
+        background-color: #2C3E50; /* Add background color */
+        color: #FFFFFF; /* Add text color */
+    }
+}
+
+/* For medium devices */
+/*REQUIRED: media query 2 of 3, 5-4-24*/
+@media screen and (max-width: 1023px) {
+    #logo {
+        display: none; /* Hide the logo */
+    }
+
+    main {
+        flex-direction: column; /* Display sections in a column */
+    }
+
+    main > section {
+        margin-bottom: 20px; /* Add some margin between sections */
+        border: 1px solid #ccc; /* Add border */
+        border-radius: 10px; /* Add border radius */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+        padding: 20px; /* Add padding for content spacing */
+        background-color: #2C3E50; /* Add background color */
+        color: #FFFFFF; /* Add text color */
+    }
+}
+
+/* For small devices */
+/*REQUIRED: media query 3 of 3, 5-4-24*/
+@media screen and (max-width: 767px) {
+    #logo {
+        display: none; /* Hide the logo */
+    }
+
+    main {
+        height: 80%;
+    }
+
+    main > section {
+        width: 90%; /* Adjust width for better responsiveness */
+        border: 1px solid #ccc; /* Add border */
+        border-radius: 10px; /* Add border radius */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+}
